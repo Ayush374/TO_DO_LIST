@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/styles.css">
+    <title>To do liat</title>
+</head>
+<body>
+    <div class="box" id="heading">
+        <h1><%=Kindofday%></h1>
+    </div>
+        <div class="box">
+            <% for(var i=0 ; i<newListItems.length;i++){ %>
+    
+
+            <div class="item">
+            
+                
+                    <input type="checkbox">
+                    <p><%=newListItems[i] %></p>
+                </div>
+                <% } %>
+            
+            <form action="/" method="post" class="item" >
+            <input type="text" placeholder="NewItem" name="newItem" autocomplete="off">
+            <button type="submit">+</button>
+        </form>
+
+        </div>
+
+       
+        
+        
+    
+    
+
+        
+        
+    
+   
+     
+</body>
+</html>
